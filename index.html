@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid items">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" width="15%" class="d-inline-block align-text-top">
+            <h1 style="display: inline; color: white;">ConvertX</h1>
+          </a>
+        </div>
+      </nav>
+      
+      <div class="main">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control"  id="num" aria-label="Text input with dropdown button">
+          <label for="unit"><span class="badge bg-secondary"><h5>UNIT:</h5></span></label>
+          <select name="unit" id="unit">
+          <option value="c" selected>Celsius</option>
+          <option value="f">Fahrenhiet</option>
+          <option value="k">Kelvin</option>
+          </select>
+      </div>
+      <div class="buttons">
+      <button type="button" class="btn btn-warning btn-lg" onclick="clr()">Clear</button>
+      <button type="button" class="btn btn-info btn-lg" onclick="getans()">Submit</button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="ans">
+        <h4> °C:<span id="c" class="badge bg-secondary">0</span></h4>
+        <h4> °F:<span id="f" class="badge bg-secondary">0</span></h4>
+        <h4> &nbsp;K:<span id="k" class="badge bg-secondary">0</span></h4>
+      </div>
+      </div>
+      <footer>
+        <div class="text-bg-dark p-3 neo footer">Made with Love ❤ by Raz<img src="R logo.png" width="30px" height="30px"></div>
+      </footer>
+    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
